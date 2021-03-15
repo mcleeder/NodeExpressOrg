@@ -16,7 +16,7 @@ app.use("/boise", require("./Boise/routes"));
 //MAIN APP
 //--------
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Heck World')
 })
 
 //--------
