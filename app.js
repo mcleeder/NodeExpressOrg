@@ -2,12 +2,11 @@ const express = require('express');
 const app = express();
 
 const path = require('path');
-const port = 3000;
+const port = 4000;
 
 //SUB APPS
 //--------
-app.use("/paris", require("./Paris/routes"));
-app.use("/boise", require("./Boise/routes"));
+app.use("/reno", require("./reno/routes"));
 
 //--------
 //END SUB APPS
@@ -16,7 +15,7 @@ app.use("/boise", require("./Boise/routes"));
 //MAIN APP
 //--------
 app.get('/', (req, res) => {
-  res.send('Heck World')
+  res.send('Heck World');
 })
 
 //--------
